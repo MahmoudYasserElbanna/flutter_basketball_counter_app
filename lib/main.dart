@@ -1,10 +1,9 @@
+import 'package:basketball_counter_app/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(BasketballCounterApp());
 }
-
-var buttonColor = Colors.orange;
 
 class BasketballCounterApp extends StatefulWidget {
   @override
@@ -21,7 +20,7 @@ class _BasketballCounterAppState extends State<BasketballCounterApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: buttonColor,
+          backgroundColor: kPrimaryColor,
           title: const Center(
             child: Text(
               'Counter Application',
@@ -57,7 +56,7 @@ class _BasketballCounterAppState extends State<BasketballCounterApp> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: buttonColor,
+                          backgroundColor: kPrimaryColor,
                           minimumSize: const Size(150, 50),
                         ),
                         onPressed: () {
@@ -79,7 +78,7 @@ class _BasketballCounterAppState extends State<BasketballCounterApp> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: buttonColor,
+                          backgroundColor: kPrimaryColor,
                           minimumSize: const Size(150, 50),
                         ),
                         onPressed: () {
@@ -101,7 +100,7 @@ class _BasketballCounterAppState extends State<BasketballCounterApp> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: buttonColor,
+                          backgroundColor: kPrimaryColor,
                           minimumSize: const Size(150, 50),
                         ),
                         onPressed: () {
