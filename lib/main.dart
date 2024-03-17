@@ -1,4 +1,5 @@
 import 'package:basketball_counter_app/Widgets/custom_elevated_button.dart';
+import 'package:basketball_counter_app/Widgets/custom_team_text.dart';
 import 'package:basketball_counter_app/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -38,15 +39,9 @@ class HomePage extends StatelessWidget {
               height: 30,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-              const Column(
+              Column(
                 children: [
-                  Text(
-                    'Team A',
-                    style: TextStyle(
-                      fontSize: 42,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  const CustomTextTeamName(teamName: 'Team A'),
                   Text(
                     '0',
                     style: TextStyle(
@@ -69,6 +64,7 @@ class HomePage extends StatelessWidget {
               ),
               Column(
                 children: [
+                  CustomTextTeamName(teamName: 'Team B'),
                   Text(
                     '0',
                     style: const TextStyle(
